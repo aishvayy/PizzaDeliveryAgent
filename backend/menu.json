@@ -1,0 +1,106 @@
+{
+    "pizzas": [
+        {
+            "name": "Margherita",
+            "price": 10.0
+        },
+        {
+            "name": "Pepperoni",
+            "price": 11.0
+        },
+        {
+            "name": "Veggie Supreme",
+            "price": 11.0
+        },
+        {
+            "name": "BBQ Chicken",
+            "price": 12.0
+        },
+        {
+            "name": "Vegan Delight",
+            "price": 11.0
+        }
+    ],
+    "toppings": [
+        {
+            "name": "Grilled Chicken",
+            "price": 2.0
+        },
+        {
+            "name": "Pepperoni",
+            "price": 2.0
+        },
+        {
+            "name": "Spicy Beef",
+            "price": 2.0
+        },
+        {
+            "name": "Tofu (vegan)",
+            "price": 1.5
+        },
+        {
+            "name": "Tuna",
+            "price": 2.0
+        },
+        {
+            "name": "Spinach",
+            "price": 1.0
+        },
+        {
+            "name": "Arugula",
+            "price": 1.0
+        },
+        {
+            "name": "Broccoli",
+            "price": 1.0
+        },
+        {
+            "name": "Bell Peppers",
+            "price": 1.0
+        },
+        {
+            "name": "Olives",
+            "price": 1.0
+        },
+        {
+            "name": "Mushrooms",
+            "price": 1.0
+        },
+        {
+            "name": "Jalapeños",
+            "price": 1.0
+        },
+        {
+            "name": "Extra Cheese",
+            "price": 1.5
+        },
+        {
+            "name": "BBQ Sauce",
+            "price": 0.5
+        }
+    ],
+    "sides": [
+        {
+            "name": "Garlic Bread",
+            "price": 3.0
+        },
+        {
+            "name": "Vegan Garlic Bread",
+            "price": 3.0
+        },
+        {
+            "name": "Cola (0.5L)",
+            "price": 2.0
+        },
+        {
+            "name": "Water (0.5L)",
+            "price": 1.5
+        }
+    ],
+    "heat_levels": [
+        "Mild",
+        "Medium",
+        "Spicy",
+        "Very Spicy"
+    ]
+}
