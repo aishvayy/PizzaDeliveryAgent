@@ -28,13 +28,30 @@ function Transcript({ sessionId }) {
   return (
     <div style={{ margin: '20px 0', padding: 16, border: '1px solid #2196f3', borderRadius: 8 }}>
       <h2>Transcript</h2>
-      <pre style={{ background: '#f6f6f6', padding: 10, borderRadius: 4 }}>
+      <div
+        style={{
+          background: '#222',
+          color: '#f6f6f6',
+          padding: '16px',
+          borderRadius: '6px',
+          maxHeight: '250px',
+          overflowY: 'auto',
+          fontFamily: 'monospace',
+          fontSize: '1rem',
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word',
+          marginBottom: '12px'
+        }}
+      >
         {transcript.map((msg, idx) => (
-          <div key={idx}>
-            <b>{msg.role === 'user' ? 'You' : 'Agent'}:</b> {msg.message}
+          <div key={idx} style={{ marginBottom: 6 }}>
+            <b style={{ color: msg.role === 'user' ? '#90caf9' : '#81c784' }}>
+              {msg.role === 'user' ? 'You' : 'Agent'}:
+            </b>{' '}
+            {msg.message}
           </div>
         ))}
-      </pre>
+      </div>
       <button onClick={downloadTranscript}>Download Transcript</button>
     </div>
   );
