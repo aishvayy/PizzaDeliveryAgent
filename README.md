@@ -28,8 +28,8 @@ An AI-powered pizza ordering agent with a modern React frontend and a FastAPI ba
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/aishvayy/PizzaDeliveryAgent.git
+cd PizzaDeliveryAgent
 ```
 
 ---
