@@ -1,6 +1,6 @@
 # 🍕 AI Pizza Delivery Agent
 
-An AI-powered pizza ordering agent with a modern React frontend and a FastAPI backend, using a local LLM (Ollama) for natural dialog.
+An AI-powered pizza ordering agent with a modern React frontend and a FastAPI backend, using Google Gemini (AI Studio) for natural dialog.
 
 ---
 
@@ -10,7 +10,7 @@ An AI-powered pizza ordering agent with a modern React frontend and a FastAPI ba
 - Menu, toppings, sides, and dietary preferences
 - Order summary and transcript download
 - Modern React frontend, FastAPI backend
-- Runs locally with free/open-source LLMs (Ollama)
+- Uses Google Gemini (AI Studio) LLM via API
 
 ---
 
@@ -18,7 +18,7 @@ An AI-powered pizza ordering agent with a modern React frontend and a FastAPI ba
 
 - Python 3.8+
 - Node.js 16+
-- [Ollama](https://ollama.com/) (for local LLM)
+- Google Gemini API key (from [Google AI Studio](https://aistudio.google.com/app/apikey))
 - (macOS, Windows, or Linux)
 
 ---
@@ -29,7 +29,6 @@ An AI-powered pizza ordering agent with a modern React frontend and a FastAPI ba
 
 ```bash
 git clone https://github.com/aishvayy/PizzaDeliveryAgent.git
-cd PizzaDeliveryAgent
 ```
 
 ---
@@ -38,8 +37,15 @@ cd PizzaDeliveryAgent
 
 ```bash
 cd backend
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
+
+#### **Set up your Gemini API key**
+- Create a `.env` file in the `backend/` directory with this line:
+  ```
+  GEMINI_API_KEY=your_actual_gemini_api_key_here
+  ```
+- The backend uses `python-dotenv` to load this key automatically.
 
 #### **Start the Backend**
 
@@ -49,22 +55,7 @@ uvicorn main:app --reload
 
 ---
 
-### 3. **Ollama Setup**
-
-- Download and install Ollama from [https://ollama.com/download](https://ollama.com/download) (macOS, Windows, Linux).
-- Start the Ollama server:
-  ```bash
-  ollama serve
-  ```
-- Download the Llama 2 model (or another supported model):
-  ```bash
-  ollama pull llama2
-  ```
-  *(You only need to do this once.)*
-
----
-
-### 4. **Frontend Setup**
+### 3. **Frontend Setup**
 
 ```bash
 cd ../frontend
@@ -87,7 +78,7 @@ npm run dev
 ## Project Structure
 
 ```
-backend/    # FastAPI backend, menu, LLM integration
+backend/    # FastAPI backend, menu, Gemini LLM integration
 frontend/   # React frontend (Vite)
 ```
 
@@ -96,7 +87,7 @@ frontend/   # React frontend (Vite)
 ## Troubleshooting
 
 - **CORS errors:** Make sure the backend is running and CORS is enabled (already set up in `main.py`).
-- **Ollama errors:** Ensure `ollama serve` is running and the model is downloaded.
+- **Gemini errors:** Ensure your API key is valid and you have access to the Gemini models.
 - **Port conflicts:** Default backend is on `8000`, frontend on `5173`.
 
 ---
@@ -118,11 +109,15 @@ dist/
 # Env
 .env
 ```
-
 ---
 
 ## Credits
 
-- [Ollama](https://ollama.com/) for local LLMs
+- [Google Gemini (AI Studio)](https://aistudio.google.com/) for LLM
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [React](https://react.dev/) 
+
+---
+
+## Working dialog
+
