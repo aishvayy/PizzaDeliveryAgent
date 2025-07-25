@@ -121,3 +121,4 @@ dist/
 
 ## Working dialog
 
+<img width="410" height="568" alt="Screenshot 2025-07-25 at 1 34 28 PM" src="https://github.com/user-attachments/assets/f52b5c91-ba0c-4b89-953c-1f38b781937e" />
