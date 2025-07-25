@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function Chat({ sessionId, setSessionId, setOrder, setTranscript }) {
+function Chat({ sessionId, setSessionId, setMessageCount }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,14 +23,7 @@ function Chat({ sessionId, setSessionId, setOrder, setTranscript }) {
 
       const agentMsg = { role: 'agent', message: res.data.response };
       setMessages((msgs) => [...msgs, agentMsg]);
-
-      // Optionally, fetch order and transcript after each message
-      // (Uncomment if you want to update order/transcript live)
-      // const orderRes = await axios.get(`http://localhost:8000/order/${res.data.session_id}`);
-      // setOrder(orderRes.data);
-      // const transcriptRes = await axios.get(`http://localhost:8000/transcript/${res.data.session_id}`);
-      // setTranscript(transcriptRes.data);
-
+      setMessageCount(count => count + 1);
     } catch (err) {
       setMessages((msgs) => [
         ...msgs,
