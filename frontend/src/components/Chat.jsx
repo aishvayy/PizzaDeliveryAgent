@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function Chat({ sessionId, setSessionId, setMessageCount }) {
+function Chat({ sessionId, setSessionId }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,6 @@ function Chat({ sessionId, setSessionId, setMessageCount }) {
 
       const agentMsg = { role: 'agent', message: res.data.response };
       setMessages((msgs) => [...msgs, agentMsg]);
-      setMessageCount(count => count + 1);
     } catch (err) {
       setMessages((msgs) => [
         ...msgs,
