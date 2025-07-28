@@ -126,7 +126,8 @@ Video of the working dialog:
 https://github.com/user-attachments/assets/9918cdb9-fa66-4c6e-a640-16adf3731d19
 
 Transcript is available upon hitting the download button: 
-[transcript.txt](https://github.com/user-attachments/files/21471049/transcript.txt)
+[transcript.txt]
+(https://github.com/user-attachments/files/21471049/transcript.txt)
 
 Screenshot of the order saved in a structured JSON format, available on the backend: <img width="632" height="659" alt="Screenshot 2025-07-28 at 3 58 56 PM" src="https://github.com/user-attachments/assets/fdcb2cfc-5b62-4b9b-9b55-fb979870e9c1" />
 
