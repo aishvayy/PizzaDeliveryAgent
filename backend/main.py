@@ -38,7 +38,7 @@ def get_menu():
 
 def call_llm(messages):
     prompt = "\n".join([f"{m['role']}: {m['content']}" for m in messages])
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    model = genai.GenerativeModel('models/gemini-2.5-flash')
     response = model.generate_content(prompt)
     return response.text
 
