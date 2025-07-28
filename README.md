@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/37494b2f-d131-4b4d-9c0a-f6a88ca62893
 # AI Pizza Delivery Agent
 
 An AI-powered pizza ordering agent with a modern React frontend and a FastAPI backend, using Google Gemini (AI Studio) for natural dialog.
@@ -125,9 +127,8 @@ Video of the working dialog:
 
 https://github.com/user-attachments/assets/9918cdb9-fa66-4c6e-a640-16adf3731d19
 
-Transcript is available upon hitting the download button: 
-[transcript.txt]
+Transcript is available upon hitting the download button, attached transcript for the demo conversation can be found here: 
 (https://github.com/user-attachments/files/21471049/transcript.txt)
 
-Screenshot of the order saved in a structured JSON format, available on the backend: <img width="632" height="659" alt="Screenshot 2025-07-28 at 3 58 56 PM" src="https://github.com/user-attachments/assets/fdcb2cfc-5b62-4b9b-9b55-fb979870e9c1" />
+Screenshot of the order saved in a structured JSON format, available on the backend on the /order/sessionId path: <img width="632" height="659" alt="Screenshot 2025-07-28 at 3 58 56 PM" src="https://github.com/user-attachments/assets/fdcb2cfc-5b62-4b9b-9b55-fb979870e9c1" />
 
